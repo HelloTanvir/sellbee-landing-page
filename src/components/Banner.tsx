@@ -9,7 +9,7 @@ const Banner = () => (
         style={{ height: 542 }}
     >
         <div className="flex flex-col justify-center flex-1">
-            <span className="font-bold tracking-wide text-white text-8xl">
+            <span className="font-bold tracking-wide text-white text-7xl">
                 Sell Our Products <br /> Take the PROFIT.
             </span>
 
