@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px 350px;
+  grid-gap: 22px;
+}
+
+.image-grid div:first-child {
+  grid-column: 1/3;
+}
