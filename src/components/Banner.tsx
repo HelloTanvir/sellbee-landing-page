@@ -13,9 +13,9 @@ const Banner = () => (
                 lets grow together <br /> with sellbee
             </span>
 
-            <span className="mt-2 text-xs text-gray-50 w-80">
+            {/* <span className="mt-2 text-xs text-gray-50 w-80">
                 Sell our products at your own shop
-            </span>
+            </span> */}
         </div>
 
         <svg
