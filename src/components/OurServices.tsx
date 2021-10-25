@@ -140,7 +140,6 @@ const OurServices = () => {
 
             <Link href="/pre-registration">
                 <span
-                    type="button"
                     className="w-1/2 p-4 mt-5 tracking-wide text-white rounded-lg bg-bg-service-btn hover:bg-bg-header-btn"
                     style={{ marginTop: 40 }}
                 >
