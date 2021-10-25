@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { GrMail } from 'react-icons/gr';
 import { MdLocationOn } from 'react-icons/md';
@@ -10,7 +11,13 @@ const Footer = () => (
     >
         <div className="flex gap-32">
             <div className="mr-8">
-                <img src="/logo-light.svg" alt="logo" className="w-full h-full" />
+                <Link href="/">
+                    <img
+                        src="/logo-light.svg"
+                        alt="logo"
+                        className="w-full h-full cursor-pointer"
+                    />
+                </Link>
             </div>
 
             <div className="flex flex-col gap-3">

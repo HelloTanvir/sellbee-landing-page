@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaRegPaperPlane, FaStumbleupon } from 'react-icons/fa';
 import { GiFilmProjector } from 'react-icons/gi';
@@ -137,13 +138,15 @@ const OurServices = () => {
                 <span>and many more</span>
             </button> */}
 
-            <button
-                type="button"
-                className="w-1/2 p-4 mt-5 tracking-wide text-white rounded-lg bg-bg-service-btn hover:bg-bg-header-btn"
-                style={{ marginTop: 40 }}
-            >
-                Start your dream
-            </button>
+            <Link href="/pre-registration">
+                <span
+                    type="button"
+                    className="w-1/2 p-4 mt-5 tracking-wide text-white rounded-lg bg-bg-service-btn hover:bg-bg-header-btn"
+                    style={{ marginTop: 40 }}
+                >
+                    Start your dream now
+                </span>
+            </Link>
         </div>
     );
 };

@@ -1,20 +1,27 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Header = () => (
     <div className="sticky top-0 z-10 flex h-16 text-right text-white border-b border-gray-300 bg-gradient-to-r from-bg-banner-left to-bg-banner-right">
         <div className="flex items-center pl-8">
-            <img src="/logo-dark.svg" alt="logo" className="h-12" />
+            <Link href="/">
+                <img src="/logo-dark.svg" alt="logo" className="h-12 cursor-pointer" />
+            </Link>
         </div>
 
         <div className="flex-grow h-16 pt-7">
-            <div className="inline px-4 cursor-pointer">Home</div>
-            <div className="inline px-4 cursor-pointer">Blog</div>
-            <div className="inline px-4 cursor-pointer">Services</div>
-            <div className="inline px-4 cursor-pointer">Career</div>
-            <div className="inline px-4 pl-2 cursor-pointer">Contact</div>
-            <div className="inline p-2 px-4 font-bold text-white transition-colors delay-75 rounded-tl-lg rounded-tr-lg rounded-br-lg cursor-pointer bg-bg-header-btn hover:bg-indigo-700">
-                Start your dream
-            </div>
+            <Link href="/">
+                <div className="inline px-4 cursor-pointer hover:undq">Home</div>
+            </Link>
+            <div className="inline px-4 cursor-pointer hover:undq">Blog</div>
+            <div className="inline px-4 cursor-pointer hover:undq">Services</div>
+            <div className="inline px-4 cursor-pointer hover:undq">Career</div>
+            <div className="inline px-4 pl-2 cursor-pointer hover:undq">Contact</div>
+            <Link href="/pre-registration">
+                <div className="inline p-2 px-4 font-bold text-white transition-colors delay-75 rounded-tl-lg rounded-tr-lg rounded-br-lg cursor-pointer bg-bg-header-btn hover:bg-indigo-700">
+                    Start your dream
+                </div>
+            </Link>
         </div>
         <div className="flex-none h-16 pt-6 w-36">
             <small className="inline cursor-pointer">
