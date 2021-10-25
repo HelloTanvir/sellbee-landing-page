@@ -9,7 +9,7 @@ const Features = () => {
             icon: FaStumbleupon,
             title: 'Products',
             content:
-                'Worried about product supplier, quality, and stock money? You can always get your products from us, sell and pay after you got your profit.',
+                'Worried about product supplier, quality, and stock money? You can always rely on us. Sell, then pay.',
         },
         {
             icon: GoDeviceDesktop,

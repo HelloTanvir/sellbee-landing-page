@@ -61,7 +61,7 @@ const Footer = () => (
 
             <div className="flex flex-col gap-3">
                 <span className="mb-1 text-base font-medium tracking-wide text-white">
-                    CNTACT INFO
+                    CONTACT INFO
                 </span>
                 {[
                     {

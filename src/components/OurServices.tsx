@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsArrowRightShort } from 'react-icons/bs';
 import { FaRegPaperPlane, FaStumbleupon } from 'react-icons/fa';
 import { GiFilmProjector } from 'react-icons/gi';
 import { GoDeviceDesktop } from 'react-icons/go';
@@ -10,7 +9,7 @@ const OurServices = () => {
             icon: FaStumbleupon,
             title: 'Products',
             content:
-                'Worried about product supplier, quality, and stock money? You can always get your products from us, sell and pay after you got your profit.',
+                'Worried about product supplier, quality, and stock money? You can always rely on us. Sell, then pay.',
         },
         {
             icon: GoDeviceDesktop,
@@ -30,18 +29,18 @@ const OurServices = () => {
             content:
                 "You don't need to think about payment gateway, packaging or delivery. Just take order and get a sleep. We'll do rest.",
         },
-        // {
-        //     icon: FaRegPaperPlane,
-        //     title: 'Payment Gateway',
-        //     content:
-        //         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
-        // },
-        // {
-        //     icon: FaRegPaperPlane,
-        //     title: 'Call Centre Support',
-        //     content:
-        //         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
-        // },
+        {
+            icon: FaRegPaperPlane,
+            title: 'Payment Gateway',
+            content:
+                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
+        },
+        {
+            icon: FaRegPaperPlane,
+            title: 'Call Centre Support',
+            content:
+                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
+        },
     ];
 
     return (
@@ -93,7 +92,7 @@ const OurServices = () => {
         </button>
     </div> */}
 
-            <div className="grid grid-cols-2 pt-11" style={{ height: 450 }}>
+            <div className="grid grid-cols-2 pt-11" style={{ height: 500 }}>
                 {/* <div className="flex flex-col gap-3 pt-11" style={{ width: '50%' }}> */}
                 {services.map((item, index) => (
                     <div
@@ -128,13 +127,22 @@ const OurServices = () => {
                 ))}
             </div>
 
-            <button
+            <span className="self-end pt-3 text-xs text-gray-600">+ Many More</span>
+
+            {/* <button
                 type="button"
                 className="flex items-center self-end gap-3 py-3 tracking-wide text-white rounded-lg px-7 hover:bg-bg-header-btn bg-bg-banner-left"
                 // style={{ backgroundColor: '#5C41DC' }}
             >
                 <span>and many more</span>
-                <BsArrowRightShort className="mt-1 text-xl" />
+            </button> */}
+
+            <button
+                type="button"
+                className="w-1/2 p-4 mt-5 tracking-wide text-white rounded-lg bg-bg-service-btn hover:bg-bg-header-btn"
+                style={{ marginTop: 40 }}
+            >
+                Start your dream
             </button>
         </div>
     );

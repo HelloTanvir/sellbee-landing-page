@@ -12,6 +12,7 @@ module.exports = {
                 'title-border': '#5c41dc',
                 'bg-reseller-grad-left': '#0F5D81',
                 'bg-reseller-grad-right': '#0091FE',
+                'bg-service-btn': '#5C41DC',
             },
         },
     },

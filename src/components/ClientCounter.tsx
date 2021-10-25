@@ -40,7 +40,7 @@ const ClientCounter = () => (
             className="px-20 text-6xl text-white bg-black rounded-md py-7"
             style={{ marginTop: 44 }}
         >
-            28
+            79
         </div>
     </div>
 );
