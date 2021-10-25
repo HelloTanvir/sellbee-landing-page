@@ -2,7 +2,7 @@ import { animate } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
 
 const ClientCounter = () => {
-    const nodeRef = useRef();
+    const nodeRef = useRef<HTMLDivElement>();
 
     const startNumber = 0;
     const endNumber = 28;
@@ -13,8 +13,10 @@ const ClientCounter = () => {
         const controls = animate(startNumber, endNumber, {
             duration: 2,
             onUpdate(value) {
-                // eslint-disable-next-line radix
-                node.textContent = parseInt(value);
+                if (node) {
+                    // eslint-disable-next-line radix
+                    node.textContent = parseInt(value);
+                }
             },
         });
 
