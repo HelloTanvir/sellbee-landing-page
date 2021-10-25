@@ -15,7 +15,7 @@ const ClientCounter = () => {
             onUpdate(value) {
                 if (node) {
                     // eslint-disable-next-line radix
-                    node.textContent = parseInt(value);
+                    node.textContent = `${parseInt(value)}`;
                 }
             },
         });
