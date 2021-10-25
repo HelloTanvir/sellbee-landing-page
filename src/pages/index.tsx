@@ -1,15 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Banner from '../components/Banner';
+import ClientCounter from '../components/ClientCounter';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import OurApproach from '../components/OurApproach';
-import OurResellers from '../components/OurResellers';
-import StartReselling from '../components/StartReselling';
-import Testimonials from '../components/Testimonials';
-import TrustedCompanies from '../components/TrustedCompanies';
-import WhoWeAre from '../components/WhoWeAre';
+import OurServices from '../components/OurServices';
 
 const Home: NextPage = () => (
     <div>
@@ -25,17 +21,19 @@ const Home: NextPage = () => (
 
         <Features />
 
-        <OurApproach />
+        {/* <OurApproach /> */}
 
-        <WhoWeAre />
+        <OurServices />
 
-        <OurResellers />
+        {/* <OurResellers /> */}
 
-        <Testimonials />
+        {/* <Testimonials /> */}
 
-        <StartReselling />
+        {/* <StartReselling /> */}
 
-        <TrustedCompanies />
+        {/* <TrustedCompanies /> */}
+
+        <ClientCounter />
 
         <Footer />
     </div>

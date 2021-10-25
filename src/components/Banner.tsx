@@ -9,8 +9,8 @@ const Banner = () => (
         style={{ height: 542 }}
     >
         <div className="flex flex-col justify-center flex-1">
-            <span className="font-bold tracking-wide text-white text-7xl">
-                Sell Our Products <br /> Take the PROFIT.
+            <span className="font-bold tracking-wide text-white uppercase text-7xl">
+                lets grow together <br /> with sellbee
             </span>
 
             <span className="mt-2 text-xs text-gray-50 w-80">

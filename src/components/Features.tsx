@@ -1,25 +1,27 @@
 import React from 'react';
-import { FaBomb, FaStumbleupon } from 'react-icons/fa';
+import { FaStumbleupon } from 'react-icons/fa';
+import { GiFilmProjector } from 'react-icons/gi';
 import { GoDeviceDesktop } from 'react-icons/go';
 
 const Features = () => {
     const cards = [
         {
             icon: FaStumbleupon,
-            title: 'Unlimited Products',
+            title: 'Products',
             content:
-                'save time and energy with our in-house products so you can focus on what matters on your business',
+                'Worried about product supplier, quality, and stock money? You can always get your products from us, sell and pay after you got your profit.',
         },
         {
             icon: GoDeviceDesktop,
-            title: 'Get a Free Website',
-            content: 'Get a free website from us and sell our products there. Easy earning',
+            title: 'WebStore',
+            content:
+                'Sign up and setup a quick and easy webstore where you can list your products, get analytics and eveything. Easy to sell products.',
         },
         {
-            icon: FaBomb,
-            title: 'Get Free Promotions',
+            icon: GiFilmProjector,
+            title: 'Analysis Team',
             content:
-                'Get free featured promotions and make a huge amount of profit by selling our products',
+                'Lost your sale? loosing visitors? Our analytics team is always ready to help you with your marketing strategy and analytics.',
         },
     ];
     return (
