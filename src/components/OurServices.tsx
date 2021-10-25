@@ -140,7 +140,7 @@ const OurServices = () => {
 
             <Link href="/pre-registration">
                 <span
-                    className="w-1/2 p-4 mt-5 tracking-wide text-center text-white rounded-lg bg-bg-service-btn hover:bg-bg-header-btn"
+                    className="flex justify-center w-1/2 p-4 mt-5 tracking-wide text-white rounded-lg cursor-pointer bg-bg-service-btn hover:bg-bg-header-btn"
                     style={{ marginTop: 40 }}
                 >
                     Start your dream now
