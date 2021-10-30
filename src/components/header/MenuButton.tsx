@@ -7,6 +7,9 @@ interface Props {
     strokeWidth?: string | number;
     transition?: Transition;
     lineProps?: any;
+    width?: number;
+    height?: number;
+    props?: {};
 }
 
 const MenuButton = ({
