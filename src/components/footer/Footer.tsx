@@ -9,8 +9,8 @@ const Footer = () => (
         className="flex flex-col items-center gap-12 pt-12 mt-32 pb-9"
         style={{ backgroundColor: '#493548' }}
     >
-        <div className="flex gap-32">
-            <div className="mr-8">
+        <div className="flex flex-col gap-12 lg:flex-row lg:gap-32">
+            <div className="hidden mr-8 lg:inline-block">
                 <Link href="/">
                     <img
                         src="/logo-light.svg"
@@ -20,8 +20,8 @@ const Footer = () => (
                 </Link>
             </div>
 
-            <div className="flex flex-col gap-3">
-                <span className="mb-1 text-base font-medium tracking-wide text-white">
+            <div className="flex flex-col gap-2 lg:gap-3">
+                <span className="mb-1 text-sm font-medium tracking-wide text-white lg:text-base">
                     QUICK LINK
                 </span>
                 {['Company', 'Our Services', 'Portfolio', 'Contact Us'].map((item) => (
@@ -30,15 +30,15 @@ const Footer = () => (
                         href="/"
                         // target="_blank"
                         rel="noreferrer"
-                        className="text-sm font-light text-gray-100 hover:underline hover:text-gray-400 w-max"
+                        className="text-xs font-light text-gray-100 lg:text-sm hover:underline hover:text-gray-400 w-max"
                     >
                         {item}
                     </a>
                 ))}
             </div>
 
-            <div className="flex flex-col gap-3">
-                <span className="mb-1 text-base font-medium tracking-wide text-white">
+            <div className="flex flex-col gap-2 lg:gap-3">
+                <span className="mb-1 text-sm font-medium tracking-wide text-white lg:text-base">
                     CONNECT WITH US
                 </span>
                 {[
@@ -59,15 +59,15 @@ const Footer = () => (
                         className="flex items-center gap-2 hover:underline hover:text-gray-400 w-max"
                     >
                         <item.icon style={{ marginTop: 2 }} />
-                        <span className="text-sm font-light text-gray-100 hover:text-gray-400">
+                        <span className="text-xs font-light text-gray-100 lg:text-sm hover:text-gray-400">
                             {item.name}
                         </span>
                     </a>
                 ))}
             </div>
 
-            <div className="flex flex-col gap-3">
-                <span className="mb-1 text-base font-medium tracking-wide text-white">
+            <div className="flex flex-col gap-2 lg:gap-3">
+                <span className="mb-1 text-sm font-medium tracking-wide text-white lg:text-base">
                     CONTACT INFO
                 </span>
                 {[
@@ -80,7 +80,9 @@ const Footer = () => (
                 ].map((item) => (
                     <span key={item.name} className="flex items-center gap-2">
                         <item.icon className="mt-1" />
-                        <span className="text-sm font-light text-gray-100">{item.name}</span>
+                        <span className="text-xs font-light text-gray-100 lg:text-sm">
+                            {item.name}
+                        </span>
                     </span>
                 ))}
             </div>
