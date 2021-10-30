@@ -5,11 +5,11 @@ const image =
 
 const Banner = () => (
     <div
-        className="flex bg-gradient-to-r from-bg-banner-left to-bg-banner-right pl-60"
+        className="flex pl-7 bg-gradient-to-r from-bg-banner-left to-bg-banner-right lg:pl-60"
         style={{ height: 542 }}
     >
         <div className="flex flex-col justify-center flex-1">
-            <span className="font-bold tracking-wide text-white uppercase text-7xl">
+            <span className="text-2xl font-bold tracking-wide text-white uppercase lg:text-7xl">
                 lets grow together <br /> with sellbee
             </span>
 
