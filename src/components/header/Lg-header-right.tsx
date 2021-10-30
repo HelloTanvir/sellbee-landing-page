@@ -1,29 +1,24 @@
 import Link from 'next/link';
 import React from 'react';
 
-const Header = () => (
-    <div className="sticky top-0 z-10 flex h-16 text-right text-white border-b border-gray-300 bg-gradient-to-r from-bg-banner-left to-bg-banner-right">
-        <div className="flex items-center pl-8">
+const LgHeaderRight = () => (
+    <div className="flex-1 hidden pt-6 lg:flex">
+        <div className="flex-1">
             <Link href="/">
-                <img src="/logo-dark.svg" alt="logo" className="h-12 cursor-pointer" />
+                <div className="inline px-4 cursor-pointer hover:underline">Home</div>
             </Link>
-        </div>
-
-        <div className="flex-grow h-16 pt-7">
-            <Link href="/">
-                <div className="inline px-4 cursor-pointer hover:undq">Home</div>
-            </Link>
-            <div className="inline px-4 cursor-pointer hover:undq">Blog</div>
-            <div className="inline px-4 cursor-pointer hover:undq">Services</div>
-            <div className="inline px-4 cursor-pointer hover:undq">Career</div>
-            <div className="inline px-4 pl-2 cursor-pointer hover:undq">Contact</div>
+            <div className="inline px-4 cursor-pointer hover:underline">Blog</div>
+            <div className="inline px-4 cursor-pointer hover:underline">Services</div>
+            <div className="inline px-4 cursor-pointer hover:underline">Career</div>
+            <div className="inline px-4 pl-2 cursor-pointer hover:underline">Contact</div>
             <Link href="/pre-registration">
-                <div className="inline p-2 px-4 font-bold text-white transition-colors delay-75 rounded-tl-lg rounded-tr-lg rounded-br-lg cursor-pointer bg-bg-header-btn hover:bg-indigo-700">
+                <div className="inline px-4 py-2 font-bold text-white transition-colors delay-75 rounded-tl-lg rounded-tr-lg rounded-br-lg cursor-pointer bg-bg-header-btn hover:bg-indigo-700">
                     Start your dream
                 </div>
             </Link>
         </div>
-        <div className="flex-none h-16 pt-6 w-36">
+
+        <div className="w-36">
             <small className="inline cursor-pointer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +31,7 @@ const Header = () => (
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                 </svg>
             </small>
+
             <small className="inline px-4 cursor-pointer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,4 +60,4 @@ const Header = () => (
     </div>
 );
 
-export default Header;
+export default LgHeaderRight;
