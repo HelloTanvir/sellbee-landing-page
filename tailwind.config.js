@@ -14,6 +14,9 @@ module.exports = {
                 'bg-reseller-grad-right': '#0091FE',
                 'bg-service-btn': '#5C41DC',
             },
+            spacing: {
+                'banner-height-lg': '542px',
+            },
         },
     },
     variants: {

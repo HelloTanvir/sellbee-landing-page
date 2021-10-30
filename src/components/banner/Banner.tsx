@@ -4,10 +4,7 @@ const image =
     'https://images.unsplash.com/photo-1573496130488-f3bd89d03653?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80';
 
 const Banner = () => (
-    <div
-        className="flex pl-7 bg-gradient-to-r from-bg-banner-left to-bg-banner-right lg:pl-60"
-        style={{ height: 542 }}
-    >
+    <div className="flex pl-7 bg-gradient-to-r from-bg-banner-left to-bg-banner-right lg:pl-60 lg:h-banner-height-lg h-96 md:h-banner-height-lg">
         <div className="flex flex-col justify-center flex-1">
             <span className="text-2xl font-bold tracking-wide text-white uppercase lg:text-7xl">
                 lets grow together <br /> with sellbee
