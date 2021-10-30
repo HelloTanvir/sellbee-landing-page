@@ -2,13 +2,13 @@ import { motion, Transition } from 'framer-motion';
 import React from 'react';
 
 interface Props {
-    isOpen?: boolean;
-    color?: string;
-    strokeWidth?: string | number;
-    transition?: Transition;
-    lineProps?: any;
-    width?: number;
-    height?: number;
+    isOpen: boolean;
+    color: string;
+    strokeWidth: number;
+    transition: Transition;
+    lineProps: any;
+    width: number;
+    height: number;
     props?: {};
 }
 
