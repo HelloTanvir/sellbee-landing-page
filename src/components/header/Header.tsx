@@ -10,7 +10,7 @@ const Header = () => (
                 <img
                     src="/logo-dark.svg"
                     alt="logo"
-                    className="h-12 transform -translate-x-1/2 cursor-pointer"
+                    className="h-12 transform -translate-x-1/2 cursor-pointer lg:-translate-x-0"
                 />
             </Link>
         </div>
