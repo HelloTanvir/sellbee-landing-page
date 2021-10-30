@@ -13,13 +13,13 @@ interface Props {
 }
 
 const MenuButton = ({
-    isOpen = false,
-    width = 24,
-    height = 24,
-    strokeWidth = 1,
-    color = '#000',
-    transition = null,
-    lineProps = null,
+    isOpen,
+    width,
+    height,
+    strokeWidth,
+    color,
+    transition,
+    lineProps,
     ...props
 }: Props) => {
     const variant = isOpen ? 'opened' : 'closed';
