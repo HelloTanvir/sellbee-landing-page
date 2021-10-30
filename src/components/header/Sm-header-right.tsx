@@ -1,6 +1,6 @@
+import { Turn as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import MenuButton from './MenuButton';
 
 const SmHeaderRight = () => {
     const [isOpen, setOpen] = useState(false);
@@ -8,17 +8,7 @@ const SmHeaderRight = () => {
     return (
         <>
             <div className="flex items-center justify-end flex-1 pr-8 lg:hidden">
-                <MenuButton
-                    isOpen={isOpen}
-                    onClick={() => setOpen((prev) => !prev)}
-                    strokeWidth={5}
-                    color="#ff6666"
-                    lineProps={{ strokeLinecap: 'round' }}
-                    transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-                    width={30}
-                    height={30}
-                    className="cursor-pointer"
-                />
+                <Hamburger toggled={isOpen} toggle={setOpen} direction="right" rounded />
             </div>
 
             {/* <div className="flex flex-1 pt-6 lg:hidden"> */}
