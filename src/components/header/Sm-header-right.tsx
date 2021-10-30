@@ -7,14 +7,14 @@ const SmHeaderRight = () => {
 
     return (
         <>
-            <div className="flex items-center justify-end flex-1 pr-8 lg:hidden">
+            <div className="flex items-center flex-1 pl-8 lg:hidden">
                 <Hamburger toggled={isOpen} toggle={setOpen} direction="right" rounded />
             </div>
 
             {/* <div className="flex flex-1 pt-6 lg:hidden"> */}
             <div
                 className={`absolute flex-col text-black bg-white px-7 py-7 lg:hidden top-16 transition-all duration-100 ease-in-out ${
-                    isOpen ? 'flex right-0' : 'invisible -right-96'
+                    isOpen ? 'flex left-0' : 'invisible -left-96'
                 }`}
             >
                 <div className="flex flex-col items-center gap-3">
