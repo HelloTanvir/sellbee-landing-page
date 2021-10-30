@@ -26,7 +26,9 @@ const ClientCounter = () => (
         <span className="text-xs tracking-wide text-gray-500 uppercase">Early Bees</span>
 
         <div className="flex flex-col gap-4">
-            <span className="text-4xl tracking-wide capitalize">people who registered early</span>
+            <span className="text-2xl tracking-wide capitalize lg:text-4xl">
+                people who registered early
+            </span>
             <span className="bg-gradient-to-r from-white to-title-border h-0.5 w-48 mx-auto" />
         </div>
 
@@ -37,7 +39,7 @@ const ClientCounter = () => (
             /> */}
 
         <div
-            className="px-20 text-6xl text-white bg-black rounded-md py-7"
+            className="px-20 text-5xl text-white bg-black rounded-md lg:text-6xl py-7"
             style={{ marginTop: 44 }}
         >
             79

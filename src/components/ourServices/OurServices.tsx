@@ -30,24 +30,24 @@ const OurServices = () => {
             content:
                 "You don't need to think about payment gateway, packaging or delivery. Just take order and get a sleep. We'll do rest.",
         },
-        {
-            icon: FaRegPaperPlane,
-            title: 'Payment Gateway',
-            content:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
-        },
-        {
-            icon: FaRegPaperPlane,
-            title: 'Call Centre Support',
-            content:
-                'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
-        },
+        // {
+        //     icon: FaRegPaperPlane,
+        //     title: 'Payment Gateway',
+        //     content:
+        //         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
+        // },
+        // {
+        //     icon: FaRegPaperPlane,
+        //     title: 'Call Centre Support',
+        //     content:
+        //         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ipsum suscipit cumque omnis corporis quibusdam tenetur ad illo blanditiis alias.',
+        // },
     ];
 
     return (
         // <div className="flex flex-col items-center pt-32 space-y-4 px-36" style={{ marginTop: 40 }}>
         <div
-            className="flex flex-col items-center pt-12 mx-auto space-y-4"
+            className="flex-col items-center hidden pt-12 mx-auto space-y-4 lg:flex"
             style={{ width: '70%' }}
         >
             <span className="text-xs tracking-wide text-gray-500 uppercase">our services</span>
