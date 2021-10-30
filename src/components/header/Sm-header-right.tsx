@@ -13,11 +13,9 @@ const SmHeaderRight = () => {
 
             {/* <div className="flex flex-1 pt-6 lg:hidden"> */}
             <div
-                className={
-                    isOpen
-                        ? 'absolute right-0 flex flex-col text-black bg-white px-7 py-7 lg:hidden top-16'
-                        : 'hidden'
-                }
+                className={`absolute flex-col text-black bg-white px-7 py-7 lg:hidden top-16 transition-all duration-100 ease-in-out ${
+                    isOpen ? 'flex right-0' : 'invisible -right-96'
+                }`}
             >
                 <div className="flex flex-col items-center gap-3">
                     <Link href="/">
