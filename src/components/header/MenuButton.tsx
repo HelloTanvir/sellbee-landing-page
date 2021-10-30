@@ -1,7 +1,7 @@
 import { motion, SVGMotionProps, Transition } from 'framer-motion';
 import React from 'react';
 
-interface Props extends SVGMotionProps {
+interface Props extends SVGMotionProps<Props> {
     isOpen: boolean;
     color: string;
     strokeWidth: number;
