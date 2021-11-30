@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import ReactGa from 'react-ga';
 import '../styles/globals.css';
 
-ReactGa.initialize(process.env.NEXT_PUBLIC_ANALYTICS_TRACKING_ID || '');
+ReactGa.initialize('UA-213823790-1');
 
 function MyApp({ Component, pageProps }: AppProps) {
     const router = useRouter();
