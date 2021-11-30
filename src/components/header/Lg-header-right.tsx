@@ -2,28 +2,28 @@ import Link from 'next/link';
 import React from 'react';
 
 const LgHeaderRight = () => (
-    <div className="flex-1 hidden pt-6 lg:flex">
-        <div className="flex-1">
+    <div className="hidden gap-10 pt-6 pr-8 lg:flex">
+        <div className="flex items-center gap-8">
             <Link href="/">
-                <div className="inline px-4 cursor-pointer hover:underline">Home</div>
+                <div className="cursor-pointer hover:underline">Home</div>
             </Link>
-            <div className="inline px-4 cursor-pointer hover:underline">Blog</div>
-            <div className="inline px-4 cursor-pointer hover:underline">Services</div>
-            <div className="inline px-4 cursor-pointer hover:underline">Career</div>
-            <div className="inline px-4 pl-2 cursor-pointer hover:underline">Contact</div>
+            <div className="cursor-pointer hover:underline">Blog</div>
+            <div className="cursor-pointer hover:underline">Services</div>
+            <div className="cursor-pointer hover:underline">Career</div>
+            <div className="cursor-pointer hover:underline">Contact</div>
             <Link href="/pre-registration">
-                <div className="inline px-4 py-2 font-bold text-white transition-colors delay-75 rounded-tl-lg rounded-tr-lg rounded-br-lg cursor-pointer bg-bg-header-btn hover:bg-indigo-700">
+                <div className="px-4 py-2 font-bold text-white transition-colors delay-75 rounded-tl-lg rounded-tr-lg rounded-br-lg cursor-pointer bg-bg-header-btn hover:bg-indigo-700">
                     Start your dream
                 </div>
             </Link>
         </div>
 
-        <div className="w-36">
+        <div className="flex items-center gap-4">
             <a
                 href="https://www.facebook.com/SellBeeOfficial"
                 target="_blank"
                 rel="noreferrer"
-                className="inline cursor-pointer"
+                className="cursor-pointer"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const LgHeaderRight = () => (
                 </svg>
             </a>
 
-            <small className="inline px-4 cursor-pointer">
+            <small className="cursor-pointer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -50,7 +50,7 @@ const LgHeaderRight = () => (
                 </svg>
             </small>
 
-            <small className="inline pr-4 cursor-pointer">
+            <small className="cursor-pointer">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
